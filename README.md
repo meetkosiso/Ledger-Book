@@ -14,9 +14,9 @@ npm install
 npm run dev
 ```
 
-## To start, you will need a create a user and authenticate the credentials,
+### To start, you will need to create a user and authenticate the credentials,
 
-## this will give a JWT token that you will use for subsequent calls to the API service
+### this will give a JWT token that you will use for subsequent calls to the API service
 
 ### To create a user
 
