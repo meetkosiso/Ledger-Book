@@ -1,4 +1,4 @@
-# Arda-Challenge
+# Ledger Book
 
 A service that have ledger that keeps track of a user's tokens and the current USD value.
 
