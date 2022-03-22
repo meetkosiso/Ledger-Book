@@ -30,7 +30,7 @@ Request Body: {"name": "test_user", "userName": "test_user", "password": "change
 
 ```
 Request Type: POST
-Route: http://localhost:3000/api/user/authentication
+Route: http://localhost:3000/api/user/authenticate
 Request Body: {"userName": "test_user", "password": "changeMe123_"}
 ```
 
@@ -46,28 +46,28 @@ Request Body: {"user": "test_user", "token": 2.9}
 
 ```
 Request Type: GET
-Route: http://localhost:3000/api/ledger/current/token/history/:userId
+Route: http://localhost:3000/api/ledger/token/history/:userId
 ```
 
 ### To returns the history of USD amounts a user has won till now (till the previous day)
 
 ```
 Request Type: GET
-Route: http://localhost:3000/api/ledger/current/usd/history/:userId
+Route: http://localhost:3000/api/ledger/usd/history/:userId
 ```
 
 ### To returns the stats: sum of tokens won on the current day so far and the total value of USD a user has in his account
 
 ```
 Request Type: GET
-Route: http://localhost:3000/api/ledger/current/user/stats/userId
+Route: http://localhost:3000/api/ledger/user/stats/userId
 ```
 
 ### To returns the tokens and the USD value a user won on a given date
 
 ```
 Request Type: GET
-Route: http://localhost:3000/api/ledger/user/history?user=userId&date=requestedDate
+Route: http://localhost:3000/api/ledger/history?user=userId&date=requestedDate
 ```
 
 ### To run Test

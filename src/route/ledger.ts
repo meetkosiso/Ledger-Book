@@ -6,24 +6,24 @@ const router = express.Router();
 
 router.post("/ledger/create", authenticate(), ledgerController.createLedger);
 router.get(
-  "/ledger/current/token/history/:id",
+  "/ledger/token/history/:id",
   authenticate(),
   ledgerController.currentUserTokenHistory
 );
 router.get(
-  "/ledger/current/usd/history/:id",
+  "/ledger/usd/history/:id",
   authenticate(),
   ledgerController.currentUserUSDHistory
 );
 
 router.get(
-  "/ledger/current/user/stats/:id",
+  "/ledger/user/stats/:id",
   authenticate(),
   ledgerController.currentUserStatistics
 );
 
 router.get(
-  "/ledger/user/history",
+  "/ledger/history",
   authenticate(),
   ledgerController.userTransactionHistory
 );
